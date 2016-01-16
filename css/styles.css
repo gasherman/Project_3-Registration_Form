@@ -1,0 +1,319 @@
+/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #222;
+  background: #fff;
+  margin: 0 auto;
+  background: rgba(254,254,254,1);
+  background: -moz-linear-gradient(left, rgba(254,254,254,1) 0%, rgba(181,181,181,1) 50%, rgba(181,181,181,1) 55%, rgba(254,254,254,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(254,254,254,1)), color-stop(50%, rgba(181,181,181,1)), color-stop(55%, rgba(181,181,181,1)), color-stop(100%, rgba(254,254,254,1)));
+  background: -webkit-linear-gradient(left, rgba(254,254,254,1) 0%, rgba(181,181,181,1) 50%, rgba(181,181,181,1) 55%, rgba(254,254,254,1) 100%);
+  background: -o-linear-gradient(left, rgba(254,254,254,1) 0%, rgba(181,181,181,1) 50%, rgba(181,181,181,1) 55%, rgba(254,254,254,1) 100%);
+  background: -ms-linear-gradient(left, rgba(254,254,254,1) 0%, rgba(181,181,181,1) 50%, rgba(181,181,181,1) 55%, rgba(254,254,254,1) 100%);
+  background: linear-gradient(to right, rgba(254,254,254,1) 0%, rgba(181,181,181,1) 50%, rgba(181,181,181,1) 55%, rgba(254,254,254,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#fefefe', GradientType=1 );
+}
+
+form {
+  text-align: left;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #999;
+}
+
+ul {
+  padding: 0px;
+}
+
+h1 {
+  font-size: 1.35em;
+}
+
+h2 {
+  font-size: 1.3em;
+  color: #2D3945;
+}
+
+h3 {
+  font-weight: normal;
+  color: #2D3945;
+}
+
+input,
+textarea,
+select { 
+  outline: none; 
+}
+
+.top-fs {
+  border: 0;
+  padding-top:20px;
+  margin-top: 3px;
+  border-top: 2px solid #2D3945;
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: bold;
+}
+
+.bottom-fs {
+  border: 0;
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: bold;
+}
+
+legend {
+  font-size: 1.3em;
+  color: #2D3945;
+  font-style: bold;
+}
+
+fieldset > legend {
+    float: left;
+}
+ 
+ fieldset > legend + * {
+    clear: both;
+}
+
+
+/* Section Styles */
+header {
+  background: #2D3945;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  width: 100%;
+}
+
+.main-page {
+  text-align: center;
+  color: #000;
+  border-bottom: 6px solid #2D3945;
+  margin-bottom: 3px;
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Form Input Styling */
+
+div[class^="form-"] {
+  padding-top: 22px;
+  color: #6E7D8D;
+  display:block;
+}
+
+div[class^="form-"] > label {
+  display:block;
+}
+
+div[class^="form-"] > input {
+  margin-top: 5px;
+  background: #EFF0F1;
+  border: 1px solid #2D3945;
+  border-radius: 5px;
+  text-indent: 15px;
+  color: #6E7D8D;
+  width: 100%;
+  background:transparent;
+}
+
+div[class^="form-"] > input:focus,
+textarea:focus {
+  border: 2px solid #46698B;
+  color: #000;
+  background: #fff;
+}
+
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='url'],
+#state {
+  height: 55px;
+  width: 100%;
+    -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  outline: none;
+}
+
+
+input[type='text']::-webkit-input-placeholder, 
+input[type='email']::-webkit-input-placeholder {
+  direction: rtl;
+  font-style: italic;
+}
+
+ #state option { 
+  color: #6E7D8D;
+  background: #2D3945;
+}
+
+.form-zip label {
+  display: block;
+}
+
+#zip1 {
+  width: 85px;
+}
+
+#zip2 {
+  width: 70px;
+}
+
+select {
+  color: #6E7D8D;
+}
+
+div[class^="form-"] > select,
+textarea {
+  margin-top: 5px;
+  width:100%;
+  background: transparent;
+  border: 1px solid #2D3945;
+  border-radius: 5px;
+  text-indent: 10px;
+  color: #6E7D8D;
+}
+div[class^="form-"] > select:focus {
+  border: 2px solid #46698B;
+  background: #fff;
+}
+
+.newsletter {
+  margin-top:25px;
+  border-top: 3px solid #2D3945;
+  padding-top: 30px;
+  color: #2D3945;
+  width: 100%;
+}
+
+.bottom-form {
+  color: #6E7D8D;
+}
+
+.textarea {
+  height: 150px;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  outline: none;
+}
+
+.textarea-desc {
+  padding: 15px 0 10px 0;
+}
+
+
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-5px 4px 0 0;
+    vertical-align:middle;
+    background:url(../img/checked-empty.png) left center no-repeat;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + span {
+    background:url(../img/checked.png) left center no-repeat;
+}
+
+
+input[type="radio"] {
+    display:none;
+}
+
+input[type="radio"] + span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-5px 4px 0 0;
+    vertical-align:middle;
+    background:url(../img/radio-empty.png) left center no-repeat;
+    cursor:pointer;
+}
+
+input[type="radio"]:checked + span {
+    background:url(../img/radio.png) left center no-repeat;
+}
+
+.signup {
+  width: 100%;
+  margin-top: 25px;
+  padding: 1.2em 0;
+  border-radius: 5px;
+  color: #fff;
+  background: #4EBBB5;
+  font-style: bold;
+  text-shadow:none !important;
+  border:none !important;
+  box-shadow:none !important;
+}
+
+footer {
+  color: #000;
+  text-align: center;
+  width: 100%;
+  font-style: italic;
+}
+
+.signup,
+.textarea {
+  width: 100%;
+}
+
+
+/* Styles for larger screens */
+@media screen and (min-width: 760px) {
+
+  .main-page,
+  fieldset {
+    max-width: 1020px;
+  }
+
+  form div[class^="form-"] label {
+    display: inline-block;
+    width: 19%;
+  }
+
+  form div[class^="form-"] input {
+    display: inline-block;
+    width: 80%;
+  }
+
+  #state {
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle;
+  }
+
+  .form-zip {
+    padding-bottom: 20px;
+
+  }
+
+}
+
